@@ -1,0 +1,16 @@
+to compile enter this command: gcc `sdl2-config --libs --cflags` -o blockade logic.c rendering.c main.c
+
+rules:
+The goal of the game is to get more of your pieces down in the board than the other player 
+You have to place your piece adjecently to the one you've previously played
+There is also a neutral piece which both players can control it does not add to your count but it can be used to block your opponent
+There is a limit on the amount of neutral pieces that can be placed both players share the same previous placement of the piece
+When one player runs out of moves it automatically switches to the other player 
+The game ends when both players run out of moves 
+
+left click for the player piece
+right click for the neutral piece
+
+You'll get a better feel for it once you play it
+
+also its probably better to play it on paper where red is X blue is O and gray is a square
