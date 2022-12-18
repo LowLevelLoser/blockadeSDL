@@ -114,8 +114,8 @@ void check_moves(game_t *game){
 		game->p_blue_moves = check_around(game, game->previous_played_blue);
 	}
 
-	game->p_red_moves = game->p_red_moves || (game->p_gray_moves && (game->player == P_RED));
-	game->p_blue_moves = game->p_blue_moves || (game->p_gray_moves && (game->player == P_BLUE));
+	game->p_red_moves = game->p_red_moves + game->p_gray_moves;
+	game->p_blue_moves = game->p_blue_moves  + game->p_gray_moves;
 }
 
 int check_around(game_t *game, int previous_played[2]){
